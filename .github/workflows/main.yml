@@ -1,5 +1,4 @@
 name: MDS Project CI
-
 on:
   push:
     branches: [main]
