@@ -1,0 +1,38 @@
+name: MDS Project CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    
+jobs : 
+  eslint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 17
+        uses: actions/setup-node@v3
+        with:
+          node-version: "17"
+          cache: 'npm'
+      - run: npm i
+      - run: npm run lint
+  deploy:
+      runs-on: ubuntu-latest
+      needs:
+          - eslint
+      steps:
+          - uses: actions/checkout@v2
+          - uses: actions/setup-node@v3
+            with:
+              node-version: '17'
+          - name: Install packages
+            run: npm i
+          - run: npm run build
+          - name: Deploy 🚀
+            uses: JamesIves/github-pages-deploy-action@v4.2.5
+            with:
+              branch: gh-pages
+              folder: dist
