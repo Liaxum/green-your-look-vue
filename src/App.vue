@@ -27,14 +27,26 @@
 				</p>
 				<br />
 				<iframe
+					class="d-none d-sm-flex d-md-none"
 					style="
 						border: 1px solid
 							rgba(0, 0, 0, 0.1);
 					"
 					width="100%"
 					height="450"
+					src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvOJbndNlLbGBpXcy7H1CwP%2FMyDigitalProject%3Fnode-id%3D137%253A8662%26scaling%3Dmin-zoom%26page-id%3D137%253A8622%26starting-point-node-id%3D137%253A8662%26hotspot-hints%3D0"
 					allowfullscreen
+				></iframe>
+				<iframe
+					class="d-sm-none d-md-flex d-lg-flex"
+					style="
+						border: 1px solid
+							rgba(0, 0, 0, 0.1);
+					"
+					width="100%"
+					height="450"
 					src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvOJbndNlLbGBpXcy7H1CwP%2FMyDigitalProject%3Fnode-id%3D1%253A3%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A3"
+					allowfullscreen
 				></iframe>
 				<br /><br />
 				<h2 class="headline font-weight-bold mb-3">
