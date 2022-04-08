@@ -17,7 +17,7 @@
 					/>
 				</v-col>
 				<h1 class="display-2 font-weight-bold mb-3">
-					Bienvenue sur Green Ysour Look !
+					Bienvenue sur Green Your Look !
 				</h1>
 				<p class="subheading font-weight-regular">
 					Notre site est en construction. <br />
