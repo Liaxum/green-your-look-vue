@@ -2,13 +2,13 @@ import axios from "axios";
 
 const state = {
 	token: null,
-	refresh_Token: null,
+	refresh_token: null,
 };
 
 const getters = {
 	isAuthenticated: (state) => !!state.token,
 	stateToken: (state) => state.token,
-	stateRefreshToken: (state) => state.refreshToken,
+	stateRefreshToken: (state) => state.refresh_token,
 };
 
 const actions = {
@@ -29,14 +29,14 @@ const actions = {
 			},
 		});
 		await commit("setToken", res.data.access_token);
-		await commit("setRefreshToken", res.data.refresh_Token);
+		await commit("setRefreshToken", res.data.refresh_token);
 	},
 };
 
 const mutations = {
 	setToken: (state, token) => (state.token = token),
 	setRefreshToken: (state, refreshToken) =>
-		(state.refreshToken = refreshToken),
+		(state.refresh_token = refreshToken),
 };
 
 export default {
