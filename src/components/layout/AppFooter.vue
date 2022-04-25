@@ -36,10 +36,10 @@
                   Réseaux sociaux
                 </v-list-item-title>
                 <v-list-item-icon style="margin-left:-5px;">
-                  <v-btn icon href="https://www.facebook.com/"><v-icon  color="white">mdi-facebook</v-icon></v-btn>
+                  <v-btn icon href="https://www.facebook.com/" target="_blank"><v-icon color="white">mdi-facebook</v-icon></v-btn>
                   <v-btn icon href="https://instagram.com/green_your_look" target="_blank"><v-icon  color="white">mdi-instagram</v-icon></v-btn>
-                  <v-btn icon href="https://www.pinterest.fr/"><v-icon  color="white">mdi-pinterest</v-icon></v-btn>
-                  <v-btn icon href="https://www.youtube.com/"><v-icon  color="white">mdi-youtube</v-icon></v-btn>
+                  <v-btn icon href="https://www.pinterest.fr/" target="_blank"><v-icon color="white">mdi-pinterest</v-icon></v-btn>
+                  <v-btn icon href="https://www.youtube.com/" target="_blank"><v-icon color="white">mdi-youtube</v-icon></v-btn>
                 </v-list-item-icon>
               </v-list-item-content>
             </v-list-item>

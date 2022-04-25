@@ -25,21 +25,22 @@
 
 	<v-navigation-drawer v-model="menu" absolute temporary color="secondary">
         <v-list nav>
-          <v-list-item-group active-class="primary--text text--accent-4">
-            <v-img alt="Logo" class="logo-carre" contain to="/"
-				:src="require('../../assets/logo-carre.png')" width="100"/>
+          	<v-list-item-group active-class="primary--text text--accent-4">
 
-			<v-text-field prepend-inner-icon="mdi-magnify" clearable solo class="mx-4 mt-3" ></v-text-field>
+			<v-img alt="Logo" class="logo-carre" contain 
+				:src="require('../../assets/logo-carre.png')" width="150"/>
+
+			<v-text-field prepend-inner-icon="mdi-magnify" clearable solo class="mx-4 mt-2" ></v-text-field>
 
 			<v-divider></v-divider>
 
-            <v-list-item class="my-3 text-center" to="/login">
+            <v-list-item class="my-2 text-center" to="/login">
               <v-list-item-title>Connexion / Inscription</v-list-item-title>
             </v-list-item>
 
 			<v-divider></v-divider>
 
-            <v-list-item class="mt-3 text-center" to="/women">
+            <v-list-item class="mt-3 mb-0 text-center" to="/women">
               <v-list-item-title>OUTFITS FEMMES</v-list-item-title>
             </v-list-item>
   
@@ -111,8 +112,8 @@
 	.logo-carre {
 		display:block; 
 		margin:auto; 
-		margin-top: 20px; 
-		margin-bottom: 30px;
+		margin-top: 10px; 
+		margin-bottom: 20px;
 	}
 
 	.v-tab, .v-text-field, .v-list-item {
