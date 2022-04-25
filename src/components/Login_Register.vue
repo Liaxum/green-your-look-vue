@@ -1,6 +1,6 @@
 <template>
-	<v-dialog v-model="dialogLoginRegister" max-width="950">
-		<v-toolbar>
+	<v-dialog v-model="dialogLoginRegister" max-width="950" persistent>
+		<v-toolbar color="secondary">
 			<v-tabs v-model="tab" centered>
 				<v-tab key="1">
 					Connexion
