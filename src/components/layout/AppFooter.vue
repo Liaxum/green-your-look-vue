@@ -60,7 +60,8 @@
           <v-text-field style="margin-top: 30px; margin-left: -70px;" label="Adresse email" dense filled></v-text-field>
         </v-col>
         <v-col class="py-0 mt-5" cols="12" sm="1">
-          <v-btn style="margin-top:30px; margin-left:-60px; height: 53px;" small outlined elevation="8" >S'inscrire</v-btn>        </v-col>
+          <v-btn style="margin-top:30px; margin-left:-60px; height: 53px;" small outlined elevation="8" >S'inscrire</v-btn>      
+        </v-col>
 
 
         <v-col class="primary white--text" cols="12" sm="6">
@@ -79,8 +80,35 @@
         </v-col>
       </v-row>
     </v-footer>
-    <v-footer class="d-md-none">
-      
+    <v-footer color="primary" padless dark class="d-md-none">
+      <v-container>
+        <v-row class="mt-5 mb-5" justify="center" no-gutters>
+          <v-col sm="3" class="titre">Informations</v-col>
+          <v-col sm="2" class="sous-titre">Livraison</v-col>
+          <v-col sm="2" class="sous-titre">Paiement</v-col>
+        </v-row>
+        <v-row class="mb-5" justify="center" no-gutters>
+          <v-col sm="3" class="titre">A propos</v-col>
+          <v-col sm="2" class="sous-titre">Notre identité</v-col>
+          <v-col sm="2" class="sous-titre">greenyourlook@gmail.com</v-col>
+        </v-row>
+        <v-row class="mb-5" justify="center" no-gutters>
+          <v-col sm="3" class="titre">Réseaux sociaux</v-col>
+          <v-col sm="1"><v-btn icon href="https://www.facebook.com/" target="_blank"><v-icon color="white">mdi-facebook</v-icon></v-btn></v-col>
+          <v-col sm="1"><v-btn icon href="https://instagram.com/green_your_look" target="_blank"><v-icon  color="white">mdi-instagram</v-icon></v-btn></v-col>
+          <v-col sm="1"><v-btn icon href="https://www.pinterest.fr/" target="_blank"><v-icon color="white">mdi-pinterest</v-icon></v-btn></v-col>
+          <v-col sm="1"><v-btn icon href="https://www.youtube.com/" target="_blank"><v-icon color="white">mdi-youtube</v-icon></v-btn></v-col>
+        </v-row>
+        <v-row justify="center" no-gutters>
+          <v-col sm="2" class="titre" style="padding-top:15px;">Newsletter</v-col>
+          <v-col sm="3">
+            <v-text-field  label="Adresse email" dense filled></v-text-field>
+          </v-col>
+          <v-col sm="2">
+            <v-btn style="margin-left:10px; height: 53px;" small outlined elevation="8" >S'inscrire</v-btn>
+          </v-col>
+        </v-row>
+      </v-container>
     </v-footer>
   </div>
 
@@ -109,6 +137,17 @@
 
   .v-text-field input {
     font-size: 14px;
+  }
+
+  .titre {
+    font-weight: 600;
+    font-size: 16px;
+    margin-left:10px;
+  }
+
+  .sous-titre {
+    font-size: 14px;
+ 
   }
 
 </style>
