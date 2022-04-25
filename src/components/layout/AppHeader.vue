@@ -34,8 +34,8 @@
 
 			<v-divider></v-divider>
 
-            <v-list-item class="my-2 text-center" to="/login">
-              <v-list-item-title>Connexion / Inscription</v-list-item-title>
+            <v-list-item class="my-2 text-center" @click="login">
+              <v-list-item-title >Connexion / Inscription</v-list-item-title>
             </v-list-item>
 
 			<v-divider></v-divider>
@@ -98,6 +98,12 @@
 		data() {
 			return {
 				menu: false
+			}
+		},
+		methods: {
+			login() {
+				this.$emit('login', true);
+				this.menu = false;
 			}
 		}
     }

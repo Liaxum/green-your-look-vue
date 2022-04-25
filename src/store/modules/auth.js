@@ -21,7 +21,6 @@ const actions = {
 	},
 
 	async login({ commit }, user) {
-		console.log("hey");
 		const res = await axios.get("/auth", {
 			auth: {
 				username: user.mail,
