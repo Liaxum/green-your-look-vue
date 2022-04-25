@@ -13,6 +13,8 @@
 	import AppHeader from '../src/components/layout/AppHeader.vue';
 	import AppFooter from '../src/components/layout/AppFooter.vue';
 
+	document.title = 'Green Your Look';
+
 	export default {
 		name: "App",
 		components: {
