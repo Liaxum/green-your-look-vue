@@ -1,36 +1,20 @@
 <template>
-    <v-app-bar app color="primary" dark>
-			<div class="d-flex align-center">
-				<v-img
-					alt="Vuetify Logo"
-					class="shrink mr-2"
-					contain
-					src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-					transition="scale-transition"
-					width="40"
-				/>
-
-				<v-img
-					alt="Vuetify Name"
-					class="shrink mt-1 hidden-sm-and-down"
-					contain
-					min-width="100"
-					src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-					width="100"
-				/>
-			</div>
-
+    <v-app-bar height="80px" app color="secondary">
+		<div class="d-flex align-center">
+			<v-img alt="Logo" class="logo" contain 
+			:src="require('../../assets/logo.png')" width="150"/>
+		</div>
+		<v-tabs color="primary">
+			<v-tab>OUTFITS FEMMES</v-tab>
+          	<v-tab class="mr-5">OUTFITS HOMMES</v-tab>
+			<v-text-field placeholder="Rechercher" clearable solo class="shrink mx-4 mt-3" ></v-text-field>
 			<v-spacer></v-spacer>
-
-			<v-btn
-				href="https://github.com/vuetifyjs/vuetify/releases/latest"
-				target="_blank"
-				text
-			>
-				<span class="mr-2">Latest Release</span>
-				<v-icon>mdi-open-in-new</v-icon>
-			</v-btn>
-		</v-app-bar>
+          	<v-tab>Créer son style</v-tab>
+          	<v-btn icon href=""><v-icon color="black">mdi-account</v-icon></v-btn>
+          	<v-btn icon href=""><v-icon color="black">mdi-cards-heart</v-icon></v-btn>
+          	<v-btn icon href=""><v-icon color="black">mdi-cart</v-icon></v-btn>
+		</v-tabs>
+	</v-app-bar>
 </template>
 
 
@@ -39,3 +23,16 @@
 		name: "AppHeader"
     }
 </script>
+
+<style scoped>
+	.logo {
+		margin-left: 30px;
+		margin-right: 60px;
+	}
+
+	.v-btn {
+		margin-top: 15px;
+		margin-right: 10px;
+	}
+
+</style>
