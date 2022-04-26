@@ -14,7 +14,7 @@
 <script>
 	import AppHeader from "../src/components/layout/AppHeader.vue";
 	import AppFooter from "../src/components/layout/AppFooter.vue";
-	import LoginRegister from "./components/Login_Register.vue"
+	import LoginRegister from "./components/login_register/Login_Register.vue"
 
 	document.title = "Green Your Look";
 

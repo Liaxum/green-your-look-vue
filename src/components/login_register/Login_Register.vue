@@ -23,8 +23,8 @@
 </template>
 
 <script>
-	import LoginForm from "./LoginForm.vue";
-	import RegisterForm from "./RegisterForm.vue";
+	import LoginForm from "../login_register/LoginForm.vue";
+	import RegisterForm from "../login_register/RegisterForm.vue";
 	export default {
 		created() {},
 		name: "LoginRegister",
