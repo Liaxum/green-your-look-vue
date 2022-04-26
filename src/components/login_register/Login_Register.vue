@@ -6,7 +6,7 @@
 					Connexion
 				</v-tab>
 				<v-tab key="2">
-					Connexion
+					Inscription
 				</v-tab>
 			</v-tabs>
 			<v-spacer/>

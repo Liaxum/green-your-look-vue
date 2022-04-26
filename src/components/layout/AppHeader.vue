@@ -16,8 +16,26 @@
 			<v-tab to="/men" class="mr-5">OUTFITS HOMMES</v-tab>
 			<v-text-field prepend-inner-icon="mdi-magnify" clearable solo class=" mx-4 mt-3" ></v-text-field>
 			<v-spacer></v-spacer>
-			<!-- <v-tab>Créer son style</v-tab> -->
-			<v-btn icon to="/account"><v-icon color="black">mdi-account</v-icon></v-btn>
+			<v-menu :close-on-click="closeOnClick" offset-y>
+				<template v-slot:activator="{ on, attrs }"> 
+					<v-btn icon v-bind="attrs" v-on="on"><v-icon color="black">mdi-account</v-icon></v-btn>			
+				</template>
+				<v-list class="text-center">
+					<v-list-item @click="login" class="pb-2" style="border-bottom: solid 1px black;">
+						<v-list-item-title> Connexion / Inscription </v-list-item-title>
+					</v-list-item>
+					<v-list-item to="/account" class="py-2" style="border-bottom: solid 1px black">
+						<v-list-item-title> Mon compte</v-list-item-title>
+					</v-list-item>
+					<v-list-item to="/orders" class="py-2" style="border-bottom: solid 1px black">
+						<v-list-item-title> Mes commandes</v-list-item-title>
+					</v-list-item>
+					<v-list-item class="pt-2" to="/favorites">
+						<v-list-item-title> Mes favoris</v-list-item-title>
+					</v-list-item>
+				</v-list>
+	
+			</v-menu>
 			<v-btn icon to="/favorites"><v-icon color="black">mdi-cards-heart</v-icon></v-btn>
 			<v-btn icon to="/cart"><v-icon color="black">mdi-cart</v-icon></v-btn>
 		</v-tabs>
