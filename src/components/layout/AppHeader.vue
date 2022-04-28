@@ -16,7 +16,7 @@
 			<v-tab to="/men" class="mr-5">OUTFITS HOMMES</v-tab>
 			<v-text-field prepend-inner-icon="mdi-magnify" clearable solo class=" mx-4 mt-3" ></v-text-field>
 			<v-spacer></v-spacer>
-			<v-menu :close-on-click="closeOnClick" offset-y>
+			<v-menu close-on-click offset-y>
 				<template v-slot:activator="{ on, attrs }"> 
 					<v-btn icon v-bind="attrs" v-on="on"><v-icon color="black">mdi-account</v-icon></v-btn>			
 				</template>
