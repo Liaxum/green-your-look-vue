@@ -12,8 +12,8 @@
 				<v-tab to="/"><v-img alt="Logo" class="logo" contain 
 					:src="require('../../assets/logo.png')" width="150"/>
 				</v-tab>
-				<v-tab to="/women">OUTFITS FEMMES</v-tab>
-				<v-tab to="/men" class="mr-5">OUTFITS HOMMES</v-tab>
+				<v-tab to="/femmes">OUTFITS FEMMES</v-tab>
+				<v-tab to="/hommes" class="mr-5">OUTFITS HOMMES</v-tab>
 				<v-text-field prepend-inner-icon="mdi-magnify" clearable solo class=" mx-4 mt-3" ></v-text-field>
 				<v-spacer></v-spacer>
 				<v-menu close-on-click offset-y>
@@ -24,20 +24,20 @@
 						<v-list-item @click="login" class="pb-2" style="border-bottom: solid 1px black;">
 							<v-list-item-title> Connexion / Inscription </v-list-item-title>
 						</v-list-item>
-						<v-list-item to="/account" class="py-2" style="border-bottom: solid 1px black">
+						<v-list-item to="/compte" class="py-2" style="border-bottom: solid 1px black">
 							<v-list-item-title> Mon compte</v-list-item-title>
 						</v-list-item>
-						<v-list-item to="/orders" class="py-2" style="border-bottom: solid 1px black">
+						<v-list-item to="/commandes" class="py-2" style="border-bottom: solid 1px black">
 							<v-list-item-title> Mes commandes</v-list-item-title>
 						</v-list-item>
-						<v-list-item class="pt-2" to="/favorites">
+						<v-list-item class="pt-2" to="/favoris">
 							<v-list-item-title> Mes favoris</v-list-item-title>
 						</v-list-item>
 					</v-list>
 		
 				</v-menu>
-				<v-btn icon to="/favorites"><v-icon color="black">mdi-cards-heart</v-icon></v-btn>
-				<v-btn icon to="/cart"><v-icon color="black">mdi-cart</v-icon></v-btn>
+				<v-btn icon to="/favoris"><v-icon color="black">mdi-cards-heart</v-icon></v-btn>
+				<v-btn icon to="/panier"><v-icon color="black">mdi-cart</v-icon></v-btn>
 			</v-tabs>
 		</v-app-bar>
 
@@ -58,17 +58,17 @@
 
 					<v-divider></v-divider>
 
-					<v-list-item class="mt-3 mb-0 text-center" to="/women">
+					<v-list-item class="mt-3 mb-0 text-center" to="/femmes">
 					<v-list-item-title>OUTFITS FEMMES</v-list-item-title>
 					</v-list-item>
 		
-					<v-list-item class="mb-3 text-center" to="/men">
+					<v-list-item class="mb-3 text-center" to="/hommes">
 					<v-list-item-title>OUTFITS HOMMES</v-list-item-title>
 					</v-list-item>
 
 					<v-divider></v-divider>
 
-					<v-list-item class="mt-3 ml-2" to="/account">
+					<v-list-item class="mt-3 ml-2" to="/compte">
 						<v-list-item-icon class="mr-4">
 							<v-icon color="black">mdi-account</v-icon>
 						</v-list-item-icon>
@@ -77,7 +77,7 @@
 						</v-list-item-content>
 					</v-list-item>
 
-					<v-list-item class="ml-2" to="/cart">
+					<v-list-item class="ml-2" to="/panier">
 						<v-list-item-icon class="mr-4">
 							<v-icon color="black">mdi-cart</v-icon>
 						</v-list-item-icon>
@@ -86,7 +86,7 @@
 						</v-list-item-content>
 					</v-list-item>
 
-					<v-list-item class="ml-2" to="/orders">
+					<v-list-item class="ml-2" to="/commandes">
 						<v-list-item-icon class="mr-4">
 							<v-icon color="black">mdi-shopping</v-icon>
 						</v-list-item-icon>
@@ -95,7 +95,7 @@
 						</v-list-item-content>
 					</v-list-item>
 
-					<v-list-item class="ml-2" to="/favorites">
+					<v-list-item class="ml-2" to="/favoris">
 						<v-list-item-icon class="mr-4">
 							<v-icon color="black">mdi-cards-heart</v-icon>
 						</v-list-item-icon>

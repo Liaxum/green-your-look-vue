@@ -1,10 +1,10 @@
 <template>
     <v-container>
-        <v-row no-gutters align="center">
+        <v-row align="center">
             <v-col cols="12" md="3" sm="6" xs="12" v-for="(style, i) in styles" :key="i">
-                <v-card max-width="200">
-                    <v-img :src="require('@/assets/femmes/' + style.img + '.png')" alt="style"></v-img>
-                    <v-card-title class="justify-center">{{ style.title }}</v-card-title>
+                <v-card to="/looks" max-width="220">
+                    <v-img :src="require('@/assets/femmes/' + style.img + '.png')" alt="style-type"></v-img>
+                    <v-card-title class="title">{{ style.title }}</v-card-title>
                 </v-card>
             </v-col>
         </v-row>
@@ -17,22 +17,14 @@ export default {
     data() {
         return {
             styles: [
-                { 
-                    img: 'basique',
-                    title: 'Basique'
-                },
-                { 
-                    img: 'boheme',
-                    title: 'Bohème'
-                },
-                { 
-                    img: 'casual',
-                    title: 'Casual'
-                },
-                { 
-                    img: 'chic',
-                    title: 'Chic'
-                }
+                { img: 'basique', title: 'Basique' },
+                { img: 'boheme', title: 'Bohème' },
+                { img: 'casual', title: 'Casual' },
+                { img: 'chic', title: 'Chic' },
+                { img: 'gothique', title: 'Gothique' },
+                { img: 'streetwear', title: 'Streetwear' },
+                { img: 'vintage', title: 'Vintage' },
+                { img: 'feminin', title: 'Féminin' },
             ]
         }
     }
@@ -40,8 +32,9 @@ export default {
 </script>
 
 <style scoped>
-    /* .img {
-        width: 100px;
-        height: auto;
-    } */
+    .title {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 500;
+        justify-content: center;
+    }
 </style>
