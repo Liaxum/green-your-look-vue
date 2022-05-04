@@ -10,20 +10,21 @@ const routes = [
 		component: () => import("../views/Home.vue"),
 	},
 	{
-		path: "/femmes",
-		name: "type",
-		component: () => import("../views/Outfits.vue"),
-	},
-	{
-		path: "/looks",
-		name: "looks",
-		component: () => import("../views/Looks.vue"),
-	},
-	{
 		path: "/test",
 		name: "test",
 		component: () => import("../views/test.vue"),
 	},
+	{
+		path: "/:type",
+		name: "type",
+		component: () => import("../views/ListStyles.vue"),
+	},
+	{
+		path: "/:type/:style",
+		name: "style",
+		component: () => import("../views/Style.vue"),
+	},
+	
 ];
 
 const router = new VueRouter({

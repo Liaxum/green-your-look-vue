@@ -12,8 +12,8 @@
 				<v-tab to="/"><v-img alt="Logo" class="logo" contain 
 					:src="require('../../assets/logo.png')" width="150"/>
 				</v-tab>
-				<v-tab to="/femmes">OUTFITS FEMMES</v-tab>
-				<v-tab to="/hommes" class="mr-5">OUTFITS HOMMES</v-tab>
+				<v-tab to="/Femmes">OUTFITS FEMMES</v-tab>
+				<v-tab to="/Hommes" class="mr-5">OUTFITS HOMMES</v-tab>
 				<v-text-field prepend-inner-icon="mdi-magnify" clearable solo class=" mx-4 mt-3" ></v-text-field>
 				<v-spacer></v-spacer>
 				<v-menu close-on-click offset-y>

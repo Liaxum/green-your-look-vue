@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<v-text-field type="mail" v-model="mail" />
-		<v-text-field type="password" v-model="password" />
+		<v-text-field type="mail" v-model="mail" label="mail"/>
+		<v-text-field type="password" v-model="password" label="password"/>
 		<v-btn @click="submit">login</v-btn>
 		<p>Login: {{ loginError ? loginError : "Good" }}</p>
 		<v-divider />

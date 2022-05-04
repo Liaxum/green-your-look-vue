@@ -9,24 +9,30 @@
       <span>Green Your Look</span> propose des vêtements éthiques pour tous les
       styles. Choisissez parmi nos looks tendances la tenue qui vous correspond !
     </p>
-    <style-type/>
+    <style-card/>
   </v-container>
 </template>
 
 <script>
-import StyleType from "../components/StyleType";
+import StyleCard from "../components/cards/StyleCard";
 
 export default {
   name: "Outfits",
 
   components: {
-    StyleType,
+    StyleCard,
   },
 
   data() {
     return {
       type: this.$route.params.type,
     }
+  },
+
+  watch: {
+      $route() {
+          this.type = this.$route.params.type;
+      }
   },
 
 };
