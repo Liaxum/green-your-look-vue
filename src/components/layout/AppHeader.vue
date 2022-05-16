@@ -4,16 +4,17 @@
 			<v-app-bar-nav-icon class="d-md-none mt-0" @click="menu = true"></v-app-bar-nav-icon>
 			<v-tabs color="primary" class="d-md-none">
 				<v-tab to="/"><v-img alt="Logo" class="logo" contain 
-					:src="require('../../assets/logo.png')" width="150"/>
+					:src="require('../../assets/logo/texte.png')" width="150"/>
 				</v-tab>
 			</v-tabs>
 
 			<v-tabs color="primary" class="d-none d-md-block">
 				<v-tab to="/"><v-img alt="Logo" class="logo" contain 
-					:src="require('../../assets/logo.png')" width="150"/>
+					:src="require('../../assets/logo/texte.png')" width="150"/>
 				</v-tab>
 				<v-tab to="/Femmes">OUTFITS FEMMES</v-tab>
-				<v-tab to="/Hommes" class="mr-5">OUTFITS HOMMES</v-tab>
+				<v-tab to="/Hommes">OUTFITS HOMMES</v-tab>
+				<v-tab to="/Blog" class="mr-5">LE BLOG</v-tab>
 				<v-text-field prepend-inner-icon="mdi-magnify" clearable solo class="mx-4 mt-3" ></v-text-field>
 				<v-spacer></v-spacer>
 				<v-menu close-on-click offset-y>
@@ -34,7 +35,6 @@
 							<v-list-item-title> Mes favoris</v-list-item-title>
 						</v-list-item>
 					</v-list>
-		
 				</v-menu>
 				<v-btn icon to="/Favoris"><v-icon color="black">mdi-cards-heart</v-icon></v-btn>
 				<v-btn icon to="/Panier"><v-icon color="black">mdi-cart</v-icon></v-btn>
@@ -44,8 +44,8 @@
 		<v-navigation-drawer v-model="menu" absolute temporary color="secondary">
 			<v-list nav>
 				<v-list-item-group active-class="primary--text text--accent-4">
-					<v-img alt="Logo" class="logo-carre" contain 
-						:src="require('../../assets/logo-carre.png')" width="150"/>
+					<v-img alt="Logo" class="logo-complet" contain 
+						:src="require('../../assets/logo/complet.png')" width="150"/>
 
 					<v-text-field prepend-inner-icon="mdi-magnify" clearable solo class="mx-4 mt-2" ></v-text-field>
 
@@ -132,7 +132,7 @@
 		margin-right: 60px;
 	}
 
-	.logo-carre {
+	.logo-complet {
 		display:block; 
 		margin:auto; 
 		margin-top: 10px; 

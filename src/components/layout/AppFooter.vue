@@ -22,7 +22,7 @@
                 <v-list-item-title style="margin-bottom:20px; font-weight: 600; font-size: 16px;">
                   A propos
                 </v-list-item-title>
-                <v-list-item-subtitle style="font-size: 14px; color:white;">Notre identité</v-list-item-subtitle>
+                <v-list-item-subtitle><a href="/Identite" style="font-size: 14px; color:white; text-decoration:none;">Notre identité</a></v-list-item-subtitle>
                 <v-list-item-subtitle style="font-size: 14px; color:white;">greenyourlook@gmail.com</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -89,7 +89,8 @@
         </v-row>
         <v-row class="mb-5" justify="center" no-gutters>
           <v-col sm="3" class="titre">A propos</v-col>
-          <v-col sm="2" class="sous-titre">Notre identité</v-col>
+          <v-col sm="2" class="sous-titre">
+            <a href="/Identite" style="font-size: 14px; color:white; text-decoration:none;">Notre identité</a></v-col>
           <v-col sm="2" class="sous-titre">greenyourlook@gmail.com</v-col>
         </v-row>
         <v-row class="mb-5" justify="center" no-gutters>
