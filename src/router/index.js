@@ -15,6 +15,26 @@ const routes = [
 		component: () => import("../views/test.vue"),
 	},
 	{
+		path: "/Compte",
+		name: "compte",
+		component: () => import("../views/Compte.vue")
+	},
+	{
+		path: "/Commandes",
+		name: "commandes",
+		component: () => import("../views/Commandes.vue")
+	},
+	{
+		path: "/Favoris",
+		name: "favoris",
+		component: () => import("../views/Favoris.vue")
+	},
+	{
+		path: "/Panier",
+		name: "panier",
+		component: () => import("../views/Panier.vue")
+	},
+	{
 		path: "/:type",
 		name: "type",
 		component: () => import("../views/ListStyles.vue"),
