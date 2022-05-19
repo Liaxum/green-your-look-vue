@@ -27,7 +27,7 @@
             width="150"
           />
         </v-tab>
-        <v-tab to="/Femmes">OUTFITS FEMMES</v-tab>
+        <v-tab to="/Femmes">OUTFITS FEMMES </v-tab>
         <v-tab to="/Hommes">OUTFITS HOMMES</v-tab>
         <v-tab to="/Blog" class="mr-5">LE BLOG</v-tab>
         <v-text-field
@@ -73,7 +73,7 @@
         <v-btn icon to="/Favoris"
           ><v-icon color="black">mdi-cards-heart</v-icon></v-btn
         >
-        <v-menu close-on-click offset-y nudge-width="300">
+        <v-menu offset-y nudge-width="300">
           <template v-slot:activator="{ on, attrs }">
             <v-btn icon v-bind="attrs" v-on="on"
               ><v-icon color="black">mdi-cart</v-icon></v-btn
@@ -102,7 +102,6 @@
                 >85,90€</span
               ></v-card-title
             >
-
             <v-card-actions style="background-color: #6b2737">
               <v-btn
                 depressed
@@ -215,11 +214,14 @@
 
 
 <script>
+import dataService from '../../service/dataService.js';
 export default {
   name: "AppHeader",
   data() {
     return {
       menu: false,
+      loading: true,
+      categorie: null,
     };
   },
   methods: {
@@ -227,7 +229,22 @@ export default {
       this.$emit("login", true);
       this.menu = false;
     },
+    getCategories() {
+      dataService.getCategories()
+      .then(response => response.data)
+      .then((response) => {
+          this.categorie = response;
+      })
+      .catch(error => console.log(error))
+      .finally(() => this.loading = false);
+    },
+    render() {
+      this.getCategories();
+    }
   },
+  mounted() {        
+    this.render();
+  }
 };
 </script>
 

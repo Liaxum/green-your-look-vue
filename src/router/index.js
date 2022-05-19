@@ -17,7 +17,7 @@ const routes = [
 	{
 		path: "/Compte",
 		name: "compte",
-		component: () => import("../views/Compte.vue")
+		component: () => import("../views/ProfilViews/Compte.vue")
 	},
 	{
 		path: "/Blog",
@@ -32,7 +32,7 @@ const routes = [
 	{
 		path: "/Historique",
 		name: "historique commandes",
-		component: () => import("../views/Historique.vue")
+		component: () => import("../views/ProfilViews/Historique.vue")
 	},
 	{
 		path: "/Commander",
@@ -42,12 +42,12 @@ const routes = [
 	{
 		path: "/Favoris",
 		name: "favoris",
-		component: () => import("../views/Favoris.vue")
+		component: () => import("../views/ProfilViews/Favoris.vue")
 	},
 	{
 		path: "/Panier",
 		name: "panier",
-		component: () => import("../views/Panier.vue")
+		component: () => import("../views/ProfilViews/Panier.vue")
 	},
 	{
 		path: "/:type",
