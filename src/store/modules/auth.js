@@ -29,6 +29,7 @@ const actions = {
 		});
 		await commit("setToken", res.data.access_token);
 		await commit("setRefreshToken", res.data.refresh_token);
+		axios.defaults.headers.common['Authorization'] = `Bearer ${res.data.access_token}`;
 	},
 };
 
