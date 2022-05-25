@@ -1,5 +1,5 @@
 <template>
-	<v-dialog v-model="dialogLoginRegister" max-width="950" persistent>
+	<v-dialog v-model="dialog" max-width="950" persistent>
 		<v-toolbar color="secondary">
 			<v-tabs v-model="tab" centered>
 				<v-tab key="1">
@@ -10,14 +10,14 @@
 				</v-tab>
 			</v-tabs>
 			<v-spacer/>
-			<v-btn icon @click.native="dialogLoginRegister = false">
+			<v-btn icon @click.native="dialog = false">
 				<v-icon>mdi-close</v-icon>
 			</v-btn>
 		</v-toolbar>
 
 		<v-tabs-items v-model="tab">
-			<LoginForm key="1" @logged="dialogLoginRegister = false"/>
-			<RegisterForm key="2" @registered="dialogLoginRegister = false"/>
+			<LoginForm key="1" @logged="dialog = false"/>
+			<RegisterForm key="2" @register="dialog = false"/>
 		</v-tabs-items>
 	</v-dialog>
 </template>
@@ -28,23 +28,16 @@
 	export default {
 		created() {},
 		name: "LoginRegister",
-		props: {
-			dialog: { required: true, type: Boolean },
-		},
 		data() {
 			return {
 				tab: null,
+				dialog: false,
 			};
 		},
-		computed: {
-			dialogLoginRegister: {
-				get() {
-					return this.dialog;
-				},
-				set(value) {
-					this.$emit("update:dialog", value);
-				},
-			},
+		methods: {
+			open() {
+				this.dialog = true;
+			}
 		},
 		components: {
 			LoginForm,

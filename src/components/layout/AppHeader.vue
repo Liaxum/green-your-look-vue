@@ -349,11 +349,10 @@
 		methods: {
 			...mapActions(["getCategories"]),
 			login() {
-				this.$emit("login", true);
-				this.menu = false;
+				this.$root.$loginRegister();
 			},
 			categories() {
-				getCategories()
+				this.getCategories()
 					.then((response) => response.data)
 					.then((response) => {
 						this.categorie = response;

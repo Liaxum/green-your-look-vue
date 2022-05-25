@@ -38,11 +38,11 @@
 </template>
 
 <script>
-import Categories from '../components/backoffice/categories.vue'
-import Looks from '../components/backoffice/looks.vue'
-import Products from '../components/backoffice/products.vue'
-import Styles from '../components/backoffice/styles.vue'
-import Users from '../components/backoffice/users.vue'
+import Categories from '../components/backoffice/Categories.vue'
+import Looks from '../components/backoffice/Looks.vue'
+import Products from '../components/backoffice/Products.vue'
+import Styles from '../components/backoffice/Styles.vue'
+import Users from '../components/backoffice/Users.vue'
 
 	export default {
 		name: "BackOffice",
