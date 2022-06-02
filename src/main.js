@@ -1,14 +1,20 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import vuetify from './plugins/vuetify'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
+import axios from "axios";
+import vuetify from "./plugins/vuetify";
 
-Vue.config.productionTip = false
+axios.defaults.withCredentials = true;
+axios.defaults.baseURL = "http://78.228.62.74:8542";
+
+Vue.config.productionTip = false;
 
 new Vue({
-  router,
-  store,
-  vuetify,
-  render: function (h) { return h(App) }
-}).$mount('#app')
+	router,
+	store,
+	vuetify,
+	render: function (h) {
+		return h(App);
+	},
+}).$mount("#app");
