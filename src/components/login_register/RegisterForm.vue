@@ -37,7 +37,7 @@
 									registerForm.password
 								"
 								type="password"
-								label="Mots de passe"
+								label="Mot de passe"
 								:rules="[
 									rules.required,
 									rules.min,
@@ -52,7 +52,7 @@
 						<v-col>
 							<v-text-field
 								type="password"
-								label="Confirmation du mots de passe"
+								label="Confirmation du mot de passe"
 								:rules="[
 									rules.required,
 									rules.same,
@@ -99,7 +99,7 @@
 					},
 					min: (v) =>
 						v.length > 8 ||
-						"Le mots doit faire minimum 8 caracteres",
+						"Le mot doit faire minimum 8 caracteres",
 					same: (v) =>
 						v ==
 							this.registerForm
