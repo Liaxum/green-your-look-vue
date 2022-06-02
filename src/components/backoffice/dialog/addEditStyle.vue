@@ -32,7 +32,7 @@
 	import { mapActions } from "vuex";
 
 	export default {
-		name: "AddCategory",
+		name: "AddEditStyle",
 		props: {
 			dialog: { require: true, type: Boolean },
 			edit: { require: true, type: Number},
@@ -54,18 +54,18 @@
 				},
 			},
 			title() {
-				return this.edit ? "Modification d'une catégorie" : "Ajout d'une catégorie";
+				return this.edit ? "Modification d'un style" : "Ajout d'un style";
 			}
 		},
 		methods: {
-			...mapActions(["createCategory", "updateCategory"]),
+			...mapActions(["createStyle", "updateStyle"]),
 			cancel() {
 				this.dialogAdd = false;
 				this.$emit('update:edit', null);
 			},
 			async submit() {
 				try {
-					await this.createCategory(this.form);
+					await this.createStyle(this.form);
 					this.cancel();
 				} catch (e) {
 					console.log(e);
@@ -74,7 +74,7 @@
 			async update() {
 				console.log(this.edit);
 				try {
-					await this.updateCategory({form: this.form, id: this.edit});
+					await this.updateStyle({form: this.form, id: this.edit});
 					this.cancel();
 				} catch (e) {
 					console.log(e);

@@ -6,8 +6,26 @@
 				:headers="headers"
 				:items="stateCategories"
 			>
+				<template #header.action>
+					<v-btn
+						color="green"
+						icon
+						fab
+						@click="update()"
+					>
+						<v-icon>mdi-reload</v-icon>
+					</v-btn>
+				</template>
 				<template #item.action="{ item }">
-					<v-btn fab icon color="orange">
+					<v-btn
+						fab
+						icon
+						color="orange"
+						@click="
+							(edit = item.id),
+								(dialog = true)
+						"
+					>
 						<v-icon> mdi-pencil </v-icon>
 					</v-btn>
 					<v-btn
@@ -22,11 +40,15 @@
 			</v-data-table>
 		</v-card-text>
 		<v-card-actions style="justify-content: right">
-			<v-btn color="primary" dark @click="dialog = true"
-				>Ajouter une Catégorie</v-btn
-			>
+			<v-btn color="primary" dark @click="dialog = true">
+				Ajouter une Catégorie
+			</v-btn>
 		</v-card-actions>
-		<AddCategory v-if="dialog" :dialog.sync="dialog" />
+		<AddCategory
+			v-if="dialog"
+			:dialog.sync="dialog"
+			:edit.sync="edit"
+		/>
 	</v-card>
 </template>
 <script>
@@ -35,14 +57,13 @@
 
 	export default {
 		name: "Categories",
-		async created() {
-			this.$root.$overlay.show();
-			await this.getCategories();
-			this.$root.$overlay.hide();
+		created() {
+			this.update();
 		},
 		data() {
 			return {
 				dialog: false,
+				edit: null,
 				headers: [
 					{
 						text: "Nom",
@@ -62,6 +83,11 @@
 		},
 		methods: {
 			...mapActions(["getCategories", "deleteCategory"]),
+			async update() {
+				this.$root.$overlay.show();
+				await this.getCategories();
+				this.$root.$overlay.hide();
+			},
 			deleteItem(item) {
 				this.$root
 					.$confirm(
@@ -73,11 +99,20 @@
 						}
 					)
 					.then(async () => {
-						this.$root.$overlay.show("Suppression d'une catégorie");
+						this.$root.$overlay.show(
+							"Suppression d'une catégorie"
+						);
 						try {
-							await this.deleteCategory(item.id);
+							await this.deleteCategory(
+								item.id
+							);
 						} catch (e) {
-							this.$root.$notif('Erreur lors de la suppression, Veuillez réssayer !', {type: 'error'});
+							this.$root.$notif(
+								"Erreur lors de la suppression, Veuillez réssayer !",
+								{
+									type: "error",
+								}
+							);
 						}
 						this.$root.$overlay.hide();
 					})
