@@ -16,7 +16,6 @@
 		<Confirm ref="confirm" />
 		<Overlay ref="overlay" />
 
-
 	<!-- <v-app
 		:style="{
 			background: $vuetify.theme.themes['light'].secondary,
