@@ -1,6 +1,5 @@
 <template>
 	<v-app>
-		<v-title>TEST</v-title>
 		<AppHeader />
 		<v-main fluid fill-height>
 			<Notification
