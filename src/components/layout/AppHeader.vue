@@ -221,7 +221,6 @@
 </template>
 
 <script>
-import dataService from "../../service/dataService.js";
 import { mapActions } from "vuex";
 
 export default {
