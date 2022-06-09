@@ -16,7 +16,7 @@
 		</v-toolbar>
 
 		<v-tabs-items v-model="tab">
-			<LoginForm key="1" @logged="dialog = false"/>
+			<LoginForm key="1" @logged="dialog = false;"/>
 			<RegisterForm key="2" @register="dialog = false"/>
 		</v-tabs-items>
 	</v-dialog>

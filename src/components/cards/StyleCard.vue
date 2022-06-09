@@ -53,23 +53,23 @@ export default {
     return {
       stylesFemmes: [
         { img: "basique", title: "Basique" },
-        { img: "boheme", title: "Bohème" },
+        { img: "boheme", title: "Boheme" },
         { img: "casual", title: "Casual" },
         { img: "chic", title: "Chic" },
         { img: "gothique", title: "Gothique" },
         { img: "streetwear", title: "Streetwear" },
         { img: "vintage", title: "Vintage" },
-        { img: "feminin", title: "Féminin" },
+        { img: "feminin", title: "Automne" },
       ],
       stylesHommes: [
         { img: "basique", title: "Basique" },
-        { img: "boheme", title: "Bohème" },
+        { img: "boheme", title: "Boheme" },
         { img: "casual", title: "Casual" },
         { img: "chic", title: "Chic" },
         { img: "gothique", title: "Gothique" },
         { img: "streetwear", title: "Streetwear" },
         { img: "vintage", title: "Vintage" },
-        { img: "masculin", title: "Masculin" },
+        { img: "masculin", title: "Automne" },
       ],
     };
   },
