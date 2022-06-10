@@ -72,8 +72,12 @@
 						);
 
 						this.errorLogin = false;
+						if (this.loginForm.mail === 'test@gmail.com') {
+							this.$router.push('/backoffice');
+						}
 						this.$emit("logged", true);
 					} catch (e) {
+						console.log(e);
 						this.errorLogin = true;
 					}
 				}
