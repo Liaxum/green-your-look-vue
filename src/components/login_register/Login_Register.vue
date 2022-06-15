@@ -1,8 +1,8 @@
 <template>
-	<v-dialog v-model="dialog" max-width="950" persistent>
+	<v-dialog id="lrDialog" v-model="dialog" max-width="950" persistent>
 		<v-toolbar color="secondary">
 			<v-tabs v-model="tab" centered>
-				<v-tab key="1">
+				<v-tab key="1" id="Connexion">
 					Connexion
 				</v-tab>
 				<v-tab key="2">
