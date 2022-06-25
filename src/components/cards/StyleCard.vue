@@ -7,14 +7,14 @@
         sm="6"
         xs="12"
         v-for="(styleF, f) in stylesFemmes"
-        :key="f"
+        :key="f"  
       >
-        <v-card :to="returnType() + '/' + styleF.title" max-width="220">
+        <v-card :to="returnType() + '/' + styleF.title" max-width="220" :id="styleF.title">
           <v-img
             :src="require('@/assets/femmes/' + styleF.img + '.png')"
             alt="styleF-type"
           ></v-img>
-          <v-card-title
+          <v-card-title 
             style="
               font-family: 'Josefin Sans', sans-serif;
               font-weight: 500;

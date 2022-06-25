@@ -9,7 +9,7 @@
         v-for="(look, l) in looks"
         :key="l"
       >
-        <v-card max-width="220" @click.stop="dialog = true">
+        <v-card max-width="220" @click.stop="dialog = true" :id="look.id">
           <v-img alt="look" :src="require(`@/assets/${img}`)"></v-img>
           <v-card-title
             style="font-family: 'Josefin Sans', sans-serif; font-weight: 400"
@@ -92,6 +92,7 @@ export default {
       dialog: false,
       looks: [
         {
+          id: 1,
           name: "Look 1",
           img: "",
           price: "36 €",
@@ -120,6 +121,7 @@ export default {
           ],
         },
         {
+          id: 2,
           name: "Look 2",
           img: "",
           price: "36 €",
@@ -148,6 +150,7 @@ export default {
           ],
         },
         {
+          id: 3,
           name: "Look 3",
           img: "",
           price: "36 €",
@@ -176,6 +179,7 @@ export default {
           ],
         },
         {
+          id: 4,
           name: "Look 4",
           img: "",
           price: "36 €",
@@ -204,6 +208,7 @@ export default {
           ],
         },
         {
+          id: 5,
           name: "Look 5",
           img: "",
           price: "36 €",
@@ -232,6 +237,7 @@ export default {
           ],
         },
         {
+          id: 6,
           name: "Look 6",
           img: "",
           price: "36 €",
@@ -260,6 +266,7 @@ export default {
           ],
         },
         {
+          id: 7,
           name: "Look 7",
           img: "",
           price: "36 €",
@@ -288,6 +295,7 @@ export default {
           ],
         },
         {
+          id: 8,
           name: "Look 8",
           img: "",
           price: "36 €",
