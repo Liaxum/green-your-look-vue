@@ -1,10 +1,7 @@
 <template>
   <div>
     <v-app-bar height="80px" app color="secondary">
-      <v-app-bar-nav-icon
-        class="d-md-none mt-0"
-        @click="menu = true"
-      ></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="d-md-none mt-0" @click="menu = true"></v-app-bar-nav-icon>
       <v-tabs color="primary" class="d-md-none">
         <v-tab to="/"
           ><v-img

@@ -41,11 +41,11 @@
             <v-img
               src="../assets/logo/carre.png"
               max-width="150"
-              style="display: block; margin: auto; margin-bottom: 15px;"
+              style="display: block; margin: auto; margin-bottom: 15px"
             ></v-img>
             <v-banner color="primary" class="text-center">
-              Découvrez des looks stylés et éco-responsables
-            </v-banner>
+              Découvrez des looks stylés et éco-responsables</v-banner
+            >
           </div>
         </v-carousel-item>
       </template>

@@ -14,9 +14,7 @@
           <v-card-title
             style="font-family: 'Josefin Sans', sans-serif; font-weight: 400"
           >
-            {{ look.name }}
-            <v-spacer></v-spacer>
-            <span>{{ look.price }}</span>
+            {{ look.name }} <v-spacer></v-spacer> <span>{{ look.price }}</span>
           </v-card-title>
           <v-divider></v-divider>
           <v-item-group style="display: flex; justify-content: center">
@@ -41,8 +39,7 @@
             style="font-family: 'Josefin Sans', sans-serif; font-weight: 400"
           >
             <v-card-actions>
-              <v-card-title> Look </v-card-title>
-              <v-spacer></v-spacer>
+              <v-card-title> Look </v-card-title> <v-spacer></v-spacer>
               <v-btn color="primary" icon fab @click="dialog = false">
                 <v-icon>mdi-close</v-icon>
               </v-btn>
@@ -57,8 +54,7 @@
                 ></v-img>
               </v-col>
               <v-col cols="12" md="7" sm="12" xs="12">
-                <item-card :img="img" :look="look" />
-                <v-spacer></v-spacer>
+                <item-card :img="img" :look="look" /> <v-spacer></v-spacer>
               </v-col>
             </v-row>
             <v-card-actions>
