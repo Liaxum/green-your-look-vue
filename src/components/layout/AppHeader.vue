@@ -36,7 +36,7 @@
         <v-spacer></v-spacer>
         <v-menu close-on-click offset-y>
           <template v-slot:activator="{ on, attrs }">
-            <v-btn icon v-bind="attrs" v-on="on">
+            <v-btn id="account" icon v-bind="attrs" v-on="on">
               <v-icon color="black">mdi-account</v-icon>
             </v-btn>
           </template>
@@ -45,6 +45,7 @@
               @click="login"
               class="pb-2"
               style="border-bottom: solid 1px black"
+              id="login"
             >
               <v-list-item-title> Connexion / Inscription </v-list-item-title>
             </v-list-item>
