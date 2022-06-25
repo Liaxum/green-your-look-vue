@@ -1,7 +1,10 @@
 <template>
   <div>
     <v-app-bar height="80px" app color="secondary">
-      <v-app-bar-nav-icon class="d-md-none mt-0" @click="menu = true"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        class="d-md-none mt-0"
+        @click="menu = true"
+      ></v-app-bar-nav-icon>
       <v-tabs color="primary" class="d-md-none">
         <v-tab to="/"
           ><v-img
@@ -24,15 +27,15 @@
             width="150"
           />
         </v-tab>
-        <v-tab to="/Femmes">OUTFITS FEMMES </v-tab>
+        <v-tab id="femmes" to="/Femmes">OUTFITS FEMMES </v-tab>
         <v-tab to="/Hommes">OUTFITS HOMMES</v-tab>
         <v-tab to="/Blog" class="mr-5">LE BLOG</v-tab>
-        <v-text-field
+        <!-- <v-text-field
           prepend-inner-icon="mdi-magnify"
           clearable
           solo
           class="mx-4 mt-3"
-        ></v-text-field>
+        ></v-text-field> -->
         <v-spacer></v-spacer>
         <v-menu close-on-click offset-y>
           <template v-slot:activator="{ on, attrs }">
@@ -144,12 +147,12 @@
             width="150"
           />
 
-          <v-text-field
+          <!-- <v-text-field
             prepend-inner-icon="mdi-magnify"
             clearable
             solo
             class="mx-4 mt-2"
-          ></v-text-field>
+          ></v-text-field> -->
 
           <v-divider></v-divider>
 
