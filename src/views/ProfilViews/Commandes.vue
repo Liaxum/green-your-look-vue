@@ -1,6 +1,6 @@
 <template>
   <v-container style="margin-bottom: 100px">
-    <v-breadcrumbs :items="items">
+    <v-breadcrumbs :items="items" style="margin-top:20px">
       <template v-slot:divider>
         <v-icon>mdi-chevron-right</v-icon>
       </template>
