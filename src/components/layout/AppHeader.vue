@@ -60,7 +60,7 @@
               <v-list-item-title> Mon compte </v-list-item-title>
             </v-list-item>
             <v-list-item
-              to="/Historique"
+              to="/Commandes"
               class="py-2"
               style="border-bottom: solid 1px black"
             >
@@ -194,7 +194,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item class="ml-2" to="/Historique">
+          <v-list-item class="ml-2" to="/Commandes">
             <v-list-item-icon class="mr-4">
               <v-icon color="black">mdi-shopping</v-icon>
             </v-list-item-icon>
