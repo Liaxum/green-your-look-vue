@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkgreen_your_look_vue"]=self["webpackChunkgreen_your_look_vue"]||[]).push([[358],{6358:function(e,n,u){u.r(n),u.d(n,{default:function(){return s}});var r=function(){var e=this,n=e.$createElement,u=e._self._c||n;return u("div")},l=[],t={name:"Commander"},o=t,a=u(1001),c=(0,a.Z)(o,r,l,!1,null,null,null),s=c.exports}}]);
-//# sourceMappingURL=358-legacy.cc7d5c17.js.map
