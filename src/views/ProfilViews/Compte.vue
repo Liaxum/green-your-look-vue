@@ -9,7 +9,6 @@
       <v-card flat width="200px">
         <v-tab style="margin: 10px 0">Informations</v-tab>
         <v-tab style="margin: 10px 0">Notifications</v-tab>
-        <v-tab style="margin: 10px 0">Commandes</v-tab>
       </v-card>
       <v-tab-item>
         <v-card flat>
@@ -117,30 +116,6 @@
           </v-list>
         </v-card>
       </v-tab-item>
-      <v-tab-item>
-        <v-card flat>
-          <v-simple-table>
-            <template>
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Look</th>
-                  <th>Articles</th>
-                  <th>Prix</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="commande in commandes" :key="commande.id">
-                  <td>{{ commande.date }}</td>
-                  <td>{{ commande.look }}</td>
-                  <td>{{ commande.articles }}</td>
-                  <td>{{ commande.prix }}</td>
-                </tr>
-              </tbody>
-            </template>
-          </v-simple-table>
-        </v-card>
-      </v-tab-item>
     </v-tabs>
     <v-btn
       color="primary"
@@ -181,22 +156,6 @@ export default {
           text: "Mon compte",
           disabled: true,
           href: "Compte",
-        },
-      ],
-      commandes: [
-        {
-          id: 1,
-          date: "11/2020",
-          look: "Look Casual Hiver",
-          articles: "Manteau à carreaux - Écharpe noire - Bonnet noir",
-          prix: "98€",
-        },
-        {
-          id: 2,
-          date: "04/2021",
-          look: "Look Chic Printemps",
-          articles: "Veste en cuir - T-shirt blanc - Jupe en cuir",
-          prix: "79€",
         },
       ],
     };
