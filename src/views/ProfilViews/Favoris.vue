@@ -70,5 +70,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+h1 {
+  font-size: 20px;
+  color: #6b2737;
+}
 </style>
