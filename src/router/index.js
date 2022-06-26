@@ -32,9 +32,9 @@ const routes = [
     component: () => import('../views/StaticViews/Identite.vue'),
   },
   {
-    path: '/Historique',
-    name: 'historique commandes',
-    component: () => import('../views/ProfilViews/Historique.vue'),
+    path: '/Commandes',
+    name: 'Commandes',
+    component: () => import('../views/ProfilViews/Commandes.vue'),
   },
   {
     path: '/Commander',
