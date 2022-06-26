@@ -39,7 +39,12 @@ const routes = [
   {
     path: '/Commander',
     name: 'commander',
-    component: () => import('../views/Commander.vue'),
+    component: () => import('../views/CommandViews/Commander.vue'),
+  },
+  {
+    path: '/Message',
+    name: 'Message',
+    component: () => import('../views/CommandViews/Message.vue'),
   },
   {
     path: '/Favoris',

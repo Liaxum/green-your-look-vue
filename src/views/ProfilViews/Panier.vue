@@ -51,7 +51,7 @@
         ></v-text-field>
       </v-col> -->
       <v-col cols="12" md="6" sm="12">
-        <v-btn color="primary">Commander</v-btn>
+        <v-btn to="/Commander" color="primary">Commander</v-btn>
       </v-col>
     </v-row>
   </v-container>
