@@ -7,9 +7,10 @@
     </h4>
     <p>
       <span>Green Your Look</span> propose des vêtements éthiques pour tous les
-      styles. Choisissez parmi nos looks tendances la tenue qui vous correspond !
+      styles. Choisissez parmi nos looks tendances la tenue qui vous correspond
+      !
     </p>
-    <style-card/>
+    <style-card />
   </v-container>
 </template>
 
@@ -26,23 +27,18 @@ export default {
   data() {
     return {
       type: this.$route.params.type,
-    }
+    };
   },
 
   watch: {
-      $route() {
-          this.type = this.$route.params.type;
-      }
+    $route() {
+      this.type = this.$route.params.type;
+    },
   },
-
 };
 </script>
 
 <style scoped>
-h1, h4, p {
-  font-family: "Josefin Sans", sans-serif;
-}
-
 h1 {
   margin: 30px 0;
   font-size: 20;
@@ -58,5 +54,4 @@ p {
   margin: 20px 0;
   font-size: 16px;
 }
-
 </style>

@@ -179,7 +179,6 @@ h1,
 h4,
 p {
   text-align: center;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 h1 {
@@ -195,7 +194,6 @@ h4 {
 }
 
 .v-banner {
-  font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
   color: white;
 }

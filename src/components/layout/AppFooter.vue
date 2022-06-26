@@ -125,11 +125,6 @@
 
   .v-btn {
     margin-right: 10px;
-    font-family: 'Josefin Sans', sans-serif;
-  }
-
-  .v-list, div {
-    font-family: 'Josefin Sans', sans-serif;
   }
 
   .parameter {

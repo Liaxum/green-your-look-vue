@@ -9,14 +9,9 @@
             :src="require('@/assets/blog/' + article.img + '.png')"
             :alt="article.img"
           ></v-img>
-          <v-card-title
-            style="
-              justify-content: center;
-              font-family: 'Josefin Sans', sans-serif;
-              font-weight: 400;
-            "
-            >{{ article.title }}</v-card-title
-          >
+          <v-card-title style="justify-content: center; font-weight: 400">{{
+            article.title
+          }}</v-card-title>
         </v-card>
       </v-col>
     </v-row>
@@ -24,7 +19,6 @@
 </template>
 
 <script>
-
 export default {
   name: "Blog",
   data() {
@@ -68,7 +62,6 @@ export default {
 
 <style scoped>
 h1 {
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   font-size: 30px;
   text-align: center;

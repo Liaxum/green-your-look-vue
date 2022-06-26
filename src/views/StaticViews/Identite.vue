@@ -21,21 +21,10 @@
       <v-col cols="12" md="6" sm="12" class="center">
         <v-card class="my-5">
           <v-card-title
-            style="
-              justify-content: center;
-              font-family: 'Josefin Sans', sans-serif;
-              font-weight: 500;
-              color: #6b2737;
-            "
+            style="justify-content: center; font-weight: 500; color: #6b2737"
             >Vegan</v-card-title
           >
-          <v-card-text
-            style="
-              justify-content: center;
-              font-family: 'Josefin Sans', sans-serif;
-              font-weight: 400;
-            "
-          >
+          <v-card-text style="justify-content: center; font-weight: 400">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
             rhoncus urna neque viverra. Ut sem nulla pharetra diam. Fermentum
@@ -53,21 +42,10 @@
       <v-col cols="12" md="6" sm="12" class="center">
         <v-card class="my-5">
           <v-card-title
-            style="
-              justify-content: center;
-              font-family: 'Josefin Sans', sans-serif;
-              font-weight: 500;
-              color: #6b2737;
-            "
+            style="justify-content: center; font-weight: 500; color: #6b2737"
             >Matières recyclées</v-card-title
           >
-          <v-card-text
-            style="
-              justify-content: center;
-              font-family: 'Josefin Sans', sans-serif;
-              font-weight: 400;
-            "
-          >
+          <v-card-text style="justify-content: center; font-weight: 400">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
             aenean pharetra magna ac placerat vestibulum. Justo donec enim diam
@@ -86,20 +64,10 @@
       <v-col cols="12" md="6" sm="12" class="center">
         <v-card class="my-5">
           <v-card-title
-            style="
-              justify-content: center;
-              font-family: 'Josefin Sans', sans-serif;
-              font-weight: 500;
-              color: #6b2737;
-            "
+            style="justify-content: center; font-weight: 500; color: #6b2737"
             >Bio</v-card-title
           >
-          <v-card-text
-            style="
-              justify-content: center;
-              font-family: 'Josefin Sans', sans-serif;
-              font-weight: 400;
-            "
+          <v-card-text style="justify-content: center; font-weight: 400"
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla
             facilisi morbi tempus iaculis urna id volutpat lacus. Etiam erat
@@ -120,20 +88,10 @@
       <v-col cols="12" md="6" sm="12" class="center">
         <v-card class="my-5">
           <v-card-title
-            style="
-              justify-content: center;
-              font-family: 'Josefin Sans', sans-serif;
-              font-weight: 500;
-              color: #6b2737;
-            "
+            style="justify-content: center; font-weight: 500; color: #6b2737"
             >Fabrication européenne</v-card-title
           >
-          <v-card-text
-            style="
-              justify-content: center;
-              font-family: 'Josefin Sans', sans-serif;
-              font-weight: 400;
-            "
+          <v-card-text style="justify-content: center; font-weight: 400"
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia
             quis vel eros donec ac odio tempor orci. Mauris ultrices eros in
@@ -162,7 +120,6 @@ export default {
 
 <style scoped>
 h1 {
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   font-size: 30px;
   text-align: center;

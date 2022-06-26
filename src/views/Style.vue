@@ -5,42 +5,36 @@
       Découvrez notre sélection de looks {{ style }} pour {{ type }}. Des tenues
       complètes de vêtements éco-responsables.
     </h4>
-    <look-card/>
+    <look-card />
   </v-container>
 </template>
 
 <script>
-import LookCard from "../components/cards/LookCard"
+import LookCard from "../components/cards/LookCard";
 
 export default {
-    name: "Looks",
+  name: "Looks",
 
-    data() {
-      return {
-        type: this.$route.params.type,
-        style: this.$route.params.style,
-      }
-    },
-
-    components: {
-        LookCard
-    },
-
-    watch: {
-      $route() {
-          this.type = this.$route.params.type;
-      }
+  data() {
+    return {
+      type: this.$route.params.type,
+      style: this.$route.params.style,
+    };
   },
 
+  components: {
+    LookCard,
+  },
+
+  watch: {
+    $route() {
+      this.type = this.$route.params.type;
+    },
+  },
 };
 </script>
 
 <style>
-
-h1, h4, p {
-  font-family: "Josefin Sans", sans-serif;
-}
-
 h1 {
   margin: 30px 0;
   font-size: 20;

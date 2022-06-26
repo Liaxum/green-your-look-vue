@@ -114,3 +114,9 @@
 		},
 	};
 </script>
+
+<style>
+.v-application {
+	font-family: 'Josefin Sans', sans-serif;
+}
+</style>

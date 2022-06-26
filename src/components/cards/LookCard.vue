@@ -11,9 +11,7 @@
       >
         <v-card max-width="220" @click.stop="dialog = true" :id="look.id">
           <v-img alt="look" :src="require(`@/assets/${img}`)"></v-img>
-          <v-card-title
-            style="font-family: 'Josefin Sans', sans-serif; font-weight: 400"
-          >
+          <v-card-title style="font-weight: 400">
             {{ look.name }} <v-spacer></v-spacer> <span>{{ look.price }}</span>
           </v-card-title>
           <v-divider></v-divider>
@@ -34,10 +32,7 @@
           :retain-focus="false"
           persistent
         >
-          <v-card
-            max-width="1000"
-            style="font-family: 'Josefin Sans', sans-serif; font-weight: 400"
-          >
+          <v-card max-width="1000" style="font-weight: 400">
             <v-card-actions>
               <v-card-title> Look </v-card-title> <v-spacer></v-spacer>
               <v-btn color="primary" icon fab @click="dialog = false">

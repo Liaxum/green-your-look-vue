@@ -270,19 +270,12 @@ export default {
   margin-bottom: 20px;
 }
 
-.v-tab,
-.v-text-field,
-.v-list-item {
-  font-family: "Josefin Sans", sans-serif;
-}
-
 .v-btn {
   margin-top: 15px;
   margin-right: 10px;
 }
 
 .panier {
-  font-family: "Josefin Sans", sans-serif;
   background-color: white;
 }
 
