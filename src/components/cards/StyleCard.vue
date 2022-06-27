@@ -33,12 +33,18 @@
         v-for="(styleH, h) in stylesHommes"
         :key="h"
       >
-        <v-card :to="returnType() + '/' + styleH.title" max-width="220">
+        <v-card
+          :to="returnType() + '/' + styleH.title"
+          max-width="220"
+          :id="styleH.title"
+        >
           <v-img
             :src="require('@/assets/hommes/' + styleH.img + '.png')"
             alt="styleH-type"
           ></v-img>
-          <v-card-title class="title">{{ styleH.title }}</v-card-title>
+          <v-card-title style="font-weight: 500; justify-content: center">{{
+            styleH.title
+          }}</v-card-title>
         </v-card>
       </v-col>
     </v-row>

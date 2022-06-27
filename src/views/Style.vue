@@ -1,5 +1,18 @@
 <template>
   <v-container class="mb-5">
+    <div style="text-align: center; margin-top: 20px">
+      <v-chip-group mandatory active-class="primary--text">
+        <v-chip
+          outlined
+          v-for="categorie in categories"
+          :key="categorie"
+          :to="categorie"
+          style="margin-right: 20px; font-size: 16px; padding: 20px"
+        >
+          {{ categorie }}
+        </v-chip>
+      </v-chip-group>
+    </div>
     <h1>{{ style }} {{ type }}</h1>
     <h4>
       Découvrez notre sélection de looks {{ style }} pour {{ type }}. Des tenues
@@ -19,6 +32,16 @@ export default {
     return {
       type: this.$route.params.type,
       style: this.$route.params.style,
+      categories: [
+        "Basique",
+        "Boheme",
+        "Casual",
+        "Chic",
+        "Gothique",
+        "Streetwear",
+        "Vintage",
+        "Automne",
+      ],
     };
   },
 
