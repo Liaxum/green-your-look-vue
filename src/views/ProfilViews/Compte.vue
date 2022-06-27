@@ -7,7 +7,7 @@
         </template>
       </v-breadcrumbs>
     </div>
-    <v-btn color="primary" outlined> Déconnexion </v-btn>
+    <v-btn color="primary" outlined style="margin-bottom:20px"> Déconnexion </v-btn>
     <v-tabs
       class="d-none d-md-flex"
       vertical
