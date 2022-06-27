@@ -72,7 +72,7 @@
 		methods: {
 			...mapActions(["getProducts", "deleteProducts"]),
 			async update() {
-				this.$root.$overlay.show();
+				// this.$root.$overlay.show();
 				await this.getProducts();
 				this.$root.$overlay.hide();
 			},

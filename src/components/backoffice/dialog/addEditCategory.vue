@@ -23,7 +23,7 @@
 	import { mapActions } from "vuex";
 
 	export default {
-		name: "AddCategory",
+		name: "AddEditCategory",
 		props: {
 			dialog: { require: true, type: Boolean },
 			edit: { require: true, type: Number},

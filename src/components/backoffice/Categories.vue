@@ -27,12 +27,12 @@
         Ajouter une Catégorie
       </v-btn>
     </v-card-actions>
-    <AddCategory v-if="dialog" :dialog.sync="dialog" :edit.sync="edit" />
+    <AddEditCategory v-if="dialog" :dialog.sync="dialog" :edit.sync="edit" />
   </v-card>
 </template>
 <script>
 import { mapActions, mapGetters } from "vuex";
-import AddCategory from "./dialog/addCategory.vue";
+import AddEditCategory from "./dialog/addEditCategory.vue";
 
 export default {
   name: "Categories",
@@ -63,7 +63,7 @@ export default {
   methods: {
     ...mapActions(["getCategories", "deleteCategory"]),
     async update() {
-      this.$root.$overlay.show();
+      // this.$root.$overlay.show();
       await this.getCategories();
       this.$root.$overlay.hide();
     },
@@ -90,7 +90,7 @@ export default {
     },
   },
   components: {
-    AddCategory,
+    AddEditCategory,
   },
 };
 </script>

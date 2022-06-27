@@ -13,7 +13,7 @@
 			<v-card-text>
 				<v-form>
 					<v-text-field
-						label="Nom de la catégorie"
+						label="Nom du style"
 						v-model="form.name"
 					/>
 				</v-form>

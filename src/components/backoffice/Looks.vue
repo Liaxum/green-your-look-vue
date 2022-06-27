@@ -66,7 +66,7 @@
 		methods: {
 			...mapActions(["getLooks"]),
 			async update() {
-				this.$root.$overlay.show();
+				// this.$root.$overlay.show();
 				await this.getLooks();
 				this.$root.$overlay.hide();
 			},
