@@ -1,19 +1,13 @@
 <template>
   <v-container>
-    <div style="display: flex; margin:20px">
+    <div style="display: flex; margin: 20px">
       <v-breadcrumbs :items="items">
         <template v-slot:divider>
           <v-icon>mdi-chevron-right</v-icon>
         </template>
       </v-breadcrumbs>
-      <v-btn
-        color="primary"
-        outlined
-        style="position: absolute; right: 0; margin: 10px 20px 0 0"
-      >
-        Déconnexion
-      </v-btn>
     </div>
+    <v-btn color="primary" outlined> Déconnexion </v-btn>
     <v-tabs
       class="d-none d-md-flex"
       vertical
