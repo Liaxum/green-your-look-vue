@@ -84,9 +84,29 @@
             <v-card-title
               >Mon panier
               <span style="position: absolute; right: 0; padding: 20px"
-                >1 article</span
-              ></v-card-title
-            >
+                >2 articles</span
+              >
+            </v-card-title>
+            <v-divider></v-divider>
+            <v-row v-for="look in panier" :key="look.id" style="margin: 0">
+              <v-col cols="12" md="4">
+                <v-img
+                  max-width="80px"
+                  style="margin-right: 30px"
+                  :src="require('@/assets/femmes/' + look.img + '.png')"
+                ></v-img>
+              </v-col>
+              <v-col cols="12" md="4">
+                <v-card-title style="font-size: 16px">{{
+                  look.nom
+                }}</v-card-title>
+              </v-col>
+              <v-col cols="12" md="4">
+                <v-card-title style="font-size: 16px">{{
+                  look.prix
+                }}</v-card-title>
+              </v-col>
+            </v-row>
             <v-divider></v-divider>
             <v-card-subtitle style="color: black">
               Code de réduction ou bon d'achat
@@ -234,6 +254,20 @@ export default {
       menu: false,
       loading: true,
       categorie: null,
+      panier: [
+        {
+          id: 1,
+          nom: "Look Été",
+          img: "ete",
+          prix: "36 €",
+        },
+        {
+          id: 2,
+          nom: "Ensemble plage",
+          img: "plage",
+          prix: "49,90 €",
+        },
+      ],
     };
   },
   methods: {

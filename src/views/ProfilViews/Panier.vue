@@ -20,23 +20,34 @@
     </div>
     <v-expansion-panels>
       <v-expansion-panel v-for="look in panier" :key="look.id">
-        <v-expansion-panel-header> 
-            <v-img max-width="100px" style="margin-right:30px" :src="require('@/assets/femmes/' + look.img + '.png')"></v-img>
-            {{ look.nom }} - {{ look.prix }} 
+        <v-expansion-panel-header>
+          <v-img
+            max-width="100px"
+            style="margin-right: 30px"
+            :src="require('@/assets/femmes/' + look.img + '.png')"
+          ></v-img>
+          {{ look.nom }} - {{ look.prix }}
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          <v-list v-for="article in look.articles" :key="article.id">
-            <v-list-item-content style="display:flex">
-                <v-list-item-title>{{ article.nom }}</v-list-item-title>
-                <v-list-item-subtitle>{{ article.details }}</v-list-item-subtitle>
+          <v-list
+            v-for="article in look.articles"
+            :key="article.id"
+            style="padding: 0"
+          >
+            <v-list-item-content style="display: flex; padding: 0">
+              <v-card>
+                <v-card-text style="padding:6px; font-size:14px; color:black"
+                  >{{ article.nom }} - {{ article.details }}</v-card-text
+                >
+              </v-card>
             </v-list-item-content>
           </v-list>
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
-    <v-row style="margin-top: 60px; text-align:center" >
+    <v-row style="margin-top: 60px; text-align: center">
       <v-col cols="12" md="6" sm="12">
-        <p style="font-size:18px; font-weight:500">Montant total : 85,90 €</p>
+        <p style="font-size: 18px; font-weight: 500">Montant total : 85,90 €</p>
       </v-col>
       <!-- <v-col cols="12" md="2" sm="12">
         <v-card-subtitle style="font-size:16px; color: black">
@@ -75,47 +86,47 @@ export default {
         },
       ],
       panier: [
-          {
-              id: 1,
-              nom: "Look Été",
-              img: "ete",
-              prix: "36 €",
-              articles: [
-                  {
-                      nom: "T-shirt manches courtes",
-                      details: "Taille S - 6 €",
-                  },
-                  {
-                      nom: "Short boutonné en jean denim",
-                      details: "Taille S - 14 €",
-                  },
-                  {
-                      nom: "Sandales plates zippées sable",
-                      details: "Taille 41 - 16 €",
-                  },
-              ]
-          },
-          {
-              id: 2,
-              nom: "Ensemble plage",
-              img: "plage",
-              prix: "49,90 €",
-              articles: [
-                  {
-                      nom: "Blouse courte à nouer",
-                      details: "Taille M - 21,40 €",
-                  },
-                  {
-                      nom: "Jupe longue fendue",
-                      details: "Taille M - 28,50 €",
-                  },
-                  {
-                      nom: "Sac bohème en paille",
-                      details: "Diamètre 20cm - 20 €",
-                  },
-              ]
-          },
-      ]
+        {
+          id: 1,
+          nom: "Look Été",
+          img: "ete",
+          prix: "36 €",
+          articles: [
+            {
+              nom: "T-shirt manches courtes",
+              details: "Taille S - 6 €",
+            },
+            {
+              nom: "Short boutonné en jean denim",
+              details: "Taille S - 14 €",
+            },
+            {
+              nom: "Sandales plates zippées sable",
+              details: "Taille 41 - 16 €",
+            },
+          ],
+        },
+        {
+          id: 2,
+          nom: "Ensemble plage",
+          img: "plage",
+          prix: "49,90 €",
+          articles: [
+            {
+              nom: "Blouse courte à nouer",
+              details: "Taille M - 21,40 €",
+            },
+            {
+              nom: "Jupe longue fendue",
+              details: "Taille M - 28,50 €",
+            },
+            {
+              nom: "Sac bohème en paille",
+              details: "Diamètre 20cm - 20 €",
+            },
+          ],
+        },
+      ],
     };
   },
 };
