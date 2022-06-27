@@ -90,7 +90,7 @@
         <v-row class="mb-5" justify="center" no-gutters>
           <v-col sm="3" class="titre">A propos</v-col>
           <v-col sm="2" class="sous-titre">
-            <a href="/Identite" style="font-size: 14px; color:white; text-decoration:none;">Notre identité</a></v-col>
+            <a to="/Identite" style="font-size: 14px; color:white; text-decoration:none;">Notre identité</a></v-col>
           <v-col sm="2" class="sous-titre">greenyourlook@gmail.com</v-col>
         </v-row>
         <v-row class="mb-5" justify="center" no-gutters>

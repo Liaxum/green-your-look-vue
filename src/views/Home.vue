@@ -92,7 +92,7 @@
         </v-col>
       </v-row>
       <div class="text-center" style="margin: 30px 0">
-        <v-btn color="primary" href="/Identite"
+        <v-btn color="primary" to="/Identite"
           >Découvrir Green Your Look</v-btn
         >
       </div>
