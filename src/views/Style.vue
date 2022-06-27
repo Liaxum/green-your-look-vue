@@ -51,6 +51,7 @@ export default {
 
   watch: {
     $route() {
+      this.style = this.$route.params.style;
       this.type = this.$route.params.type;
     },
   },
