@@ -16,7 +16,7 @@ const actions = {
         await axios.post('looks', form);
         await dispatch("getLooks")
     },
-    async updateLooks({dispatch}, form, id) {
+    async updateLook({dispatch}, form, id) {
         await axios.put(`looks/${id}`, form);
         await dispatch("getLooks");
     },

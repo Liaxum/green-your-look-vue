@@ -16,7 +16,7 @@ const actions = {
         await axios.post('products', form);
         await dispatch("getProducts")
     },
-    async updateProducts({dispatch}, form, id) {
+    async updateProduct({dispatch}, form, id) {
         await axios.put(`products/${id}`, form);
         await dispatch("getProducts");
     },

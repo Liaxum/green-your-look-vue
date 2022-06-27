@@ -16,7 +16,7 @@ const actions = {
         await axios.post('styles', form);
         await dispatch("getStyles")
     },
-    async updateStyles({dispatch}, form, id) {
+    async updateStyle({dispatch}, form, id) {
         await axios.put(`styles/${id}`, form);
         await dispatch("getStyles");
     },
